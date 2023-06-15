@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Persistent.unity
+    guid: b5890a4f4c444728bf95b3b78a72d799
+  - enabled: 1
+    path: Assets/Scenes/MenuTo/MainMenu.unity
+    guid: fa0418d5e291061438d18f80f688f1d0
+  - enabled: 1
+    path: Assets/Scenes/MenuTo/Friend.unity
+    guid: 8c8b7973e465bd8459b225f637c01f31
+  - enabled: 1
+    path: Assets/Scenes/MenuTo/Guild.unity
+    guid: 83b6e6ca76aa041459c87257a35394e7
+  - enabled: 1
+    path: Assets/Scenes/MenuTo/Hero.unity
+    guid: 12c57597f48e88649891439634703fbf
+  - enabled: 1
+    path: Assets/Scenes/MenuTo/Store.unity
+    guid: 24b0c554af55d924697f999daad3f965
+  - enabled: 1
+    path: Assets/Scenes/MenuTo/News.unity
+    guid: 236590381b1c9094096fde20a4e2a1f6
+  - enabled: 1
+    path: Assets/Scenes/MenuTo/Event.unity
+    guid: 0af54cc6eebceba41aa5aa8f2df39192
+  - enabled: 1
+    path: Assets/Scenes/GameLevel/Level1.unity
+    guid: d612b2f830a51fa47bb0cc718687c43e
+  - enabled: 1
+    path: Assets/Scenes/GameLevel/Level2.unity
+    guid: c850ee8c3b14cc8459e7e186857cf567
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d6e8a2c7c1ccc9b4e827dc2768217401,
+      type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: 05de0224399e5ff43b9b3dbae58af0bf, type: 2}

@@ -1,0 +1,83 @@
+　　1、Joystick name修改摇杆的名字；
+
+　　2、Activated是否激活，勾选之后，摇杆才可以使用，不勾选的话点击不会起作用；
+
+　　3、Visible是否在Game视图显示，勾选之后会在Game视图出现，不勾选就不会出现在Game视图；
+
+　　4、Use Fixed Update是否使用固定更新，勾选之后会在Fixed Update方法里执行相关的摇杆参数更新；
+
+　　5、Unregister at disabling time是否在脚本不可用的时候取消注册事件。
+
+　　勾选之后会执行，不勾选的话不会执行。
+
+　　6、Position&Size
+
+　　控制摇杆整体的位置和大小。
+
+　　Type有两个选项，
+
+　　Static静态，摇杆的位置在Game视图中的位置是固定不变的；
+
+　　Dynamic动态的，摇杆的位置是动态的，随着鼠标（PC）或手指（移动平台）的点击位置而出现；
+
+　　Joystick area指定摇杆出现的区域；
+
+　　Background size摇杆背景图片的尺寸大小；
+
+　　Thumb size摇杆中间可控的图片尺寸大小；
+
+　　Radius based on摇杆背景的半径基于本身图片的长或宽；
+
+　　7、Axes Properties虚拟键属性
+
+　　Enable Unity axes是否使用Unity中的虚拟键；
+
+　　Allow Unity axes on standalone是否允许在Pc平台使用Unity虚拟键；
+
+　　Force visible是否强制显示；
+
+　　8、Turn&Move diretion Action是否使用旋转和移动行为
+
+　　勾选之后，会出现如下界面，可以往Direct action to 选项中拖一个游戏对象，然后可以通过摇杆控制游戏对象的移动旋转。
+
+　　比如我新建一个Cube，然后把这个Cube拖过来，运行Unity，就可以通过摇杆控制Cube的移动和旋转了
+
+　　Auto link on tag 勾选之后可以通过标签自动查找到该游戏对象，选中Player标签，然后创建一个Cube，然后给Cube设置一下Player标签。也可以通过摇杆控制角色的移动。
+
+　　Move cure移动曲线，可以自己调整；
+
+　　Move speed控制指定物体的移动速度，可以自己调整；
+
+　　Intial rotation开始的角度；
+
+　　Lock in jump是否锁定jump轴
+
+　　Horizonal axis水平轴A键和D键；
+
+　　Vertical axis 垂直轴W键和S键；
+
+　　Camera关于摄像机的设置；
+
+　　Enable tracking是否可跟踪物体；勾选后窗口如下：
+
+　　Auto link on tag也是根据标签查找Camera进行控制；
+
+　　Target mode目标模式有四种，一般默认就好；
+
+　　Camera target摄像机观察的目标，可以把游戏对象拖过来，也可以根据标签查找；
+
+　　Camera mode摄像机运动模式，有两种，一般默认Follow就好；
+
+　　Offset指摄像机与射线机观察的目标的相对位置；
+
+　　9、Sprites设定摇杆的背景图片，可以点select进行图片选择；
+
+　　10、Move Events指移动摇杆时可以绑定的方法，和UGUI的Button组件绑定方法一样，唯一的缺点就是把指定方法的参数限定了。（这里是Vector2）
+
+　　第三步，对ETCButton组件的使用和相关属性进行介绍。
+
+　　它的创建和摇杆一样，也是从菜单栏GameObject=》EasyTouch Controls=》 Button，创建完之后如下图，名字修改和摇杆修改一样。
+
+　　主要介绍一下Button控件自身带的ETC Button组件的Behaviour属性，可以它的这些属性实现控制模型跳跃的功能。具体设置如下，需要注意的是模型身上必须加一个Character Controller组件。
+
+　　给Button绑定事件，和UGUI的Button使用方法相同，也是拖一个游戏对象，选择它身上的脚本，然后选择指定的方法，注意方法必须定义成Public。
